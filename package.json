@@ -1,0 +1,24 @@
+{
+  "name": "leafyshop-front",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "3.6.1",
+    "@astrojs/tailwind": "5.1.0",
+    "@nextui-org/react": "^2.4.6",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "astro": "4.12.3",
+    "framer-motion": "^11.3.19",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.7"
+  }
+}
