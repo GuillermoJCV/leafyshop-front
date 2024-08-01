@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/astro/landing/Navbar.astro';
+import NavbarComponent from '../components/react/NavbarComponent.jsx';
 ---
 
 <Layout title="Inicio.">
-	<Navbar />
+	<NavbarComponent client:only/>
 </Layout>
