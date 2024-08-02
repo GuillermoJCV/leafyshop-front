@@ -17,8 +17,10 @@
     "@types/react-dom": "18.3.0",
     "astro": "4.12.3",
     "framer-motion": "^11.3.19",
+    "leafyshop-front": "file:",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-icons": "^5.2.1",
     "tailwindcss": "3.4.7"
   }
 }

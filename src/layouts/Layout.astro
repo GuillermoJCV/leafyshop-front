@@ -22,6 +22,18 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
+		--bg-color: #D5D6E0;
+		--header-bg-color: #013979;
+		--st-neutral-color: #FFFFFF;
+		--nd-neutral-color: #303030;
+		--st-secondary-color: #F3F4F6;
+		--nd-secondary-color: #004493;
+		--border-color: #AAAAAA;
+		--st-shadow-color: rgba(0, 0, 0, 0.2);
+		--nd-shadow-color: rgba(0, 0, 0, 0.4);
+		--rd-shadow-color: rgba(0, 0, 0, 0.5);
+
+		
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
@@ -34,9 +46,12 @@ const { title } = Astro.props;
 	}
 	body {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background-color: var(--bg-color);
 		background-size: 224px;
 	}
+	h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
 	code {
 		font-family:
 			Menlo,

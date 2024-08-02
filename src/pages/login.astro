@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/astro/landing/Navbar.astro';
+import LoginComponent from '../components/react/login/Login.jsx';
+import '../components/react/login/login.css';
+---
+
+<Layout title="Login">
+    <Navbar />
+    <div class=" mx-auto bg-gray-200 min-h-screen flex items-center justify-center">
+        <LoginComponent client:only />
+    </div>
+</Layout>
