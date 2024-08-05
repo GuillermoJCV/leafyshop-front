@@ -1,54 +1,52 @@
-# Astro Starter Kit: Basics
+# <p align="center">PROYECTO LEAFY SHOP E-COMMERCE</p>
 
-```sh
-npm create astro@latest -- --template basics
+<img src="public/octocat-elegante-para-el-readme.png" alt="octocat-image" width=200 height=200/>
+
+Este es un proyecto hecho por personas que están estudiando en Alura y algunos otros que quisieron participar en su creación, sin embargo, cualquiera puede aportar al proyecto
+A todos los que participen se les dará crédito, es un proyecto sin ánimo de lucro.
+
+Para más información, entren a los siguientes links<br>
+[Acerca de este proyecto](https://hushed-spectacles-5a2.notion.site/Acerca-de-este-proyecto-1091394120df45f68e4084f0e50e70bd?pvs=74)
+
+Avances del proyecto<br>
+[Jira](https://leafy-shop.atlassian.net/jira/software/projects/LSP/boards/1/backlog?atlOrigin=eyJpIjoiYjMyYTY2ZWYwMTkyNDZiZWEyYWEwYmJiYWMzMTNiNTIiLCJwIjoiaiJ9)
+
+[Reglas del proyecto](https://hushed-spectacles-5a2.notion.site/Reglas-25b404f43c724c63bfdc2d37a29f1072?pvs=25) <br>
+
+[Instrucciones para front end](https://hushed-spectacles-5a2.notion.site/Instrucciones-Front-End-151b9ace784c440b92523c20039cebd5?pvs=25)
+<br>
+Requisitos: <br>
+* Tener node instalado
+* Tener gitbash instalado
+* Si no sabes hacer algo solo pregunta, este proyecto es para aprender
+
+Para empezar a programar solo corre los siguientes comandos en la carpeta en la que quieras ver el proyecto:<br>
+```bat
+git clone https://github.com/GuillermoJCV/E-Commerce-Project-ONE
+```
+```bat
+npm install
+```
+```bat
+npm run dev
+O por el contrario:
+npm start
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tecnologías
+* HTML, CSS, JavaScript
+* Astro
+* React
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologías secundarias
+* Node, npm
+* VSCode / Sublime Text 4
+* Git
+* Github
+* Zustand
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Herramientas de gestión y diseño
+* [Jira](https://leafy-shop.atlassian.net/jira/software/projects/LSP/boards/1/backlog?atlOrigin=eyJpIjoiYjMyYTY2ZWYwMTkyNDZiZWEyYWEwYmJiYWMzMTNiNTIiLCJwIjoiaiJ9)
+* [Figma](https://www.figma.com/file/kg7WknSprNUObTt8R9TD7d/Proyecto-E-Commerce?type=design&node-id=0-1&mode=design&t=KgWuTKvLzmK89fLD-0)
+* [Acerca de este proyecto](https://hushed-spectacles-5a2.notion.site/Acerca-de-este-proyecto-1091394120df45f68e4084f0e50e70bd?pvs=74)
+* [Draw.io](https://drive.google.com/file/d/1rae6rU9asWYb0YTFgOrOIYX7l_djv-KV/view?usp=sharing)
