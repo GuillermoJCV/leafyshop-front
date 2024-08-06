@@ -8,6 +8,9 @@ export default {
 				],
 	theme: {
 		extend: {},
+		colors: {
+			'green-medio': '#35F33B',
+		},
 	},
 	darkMode: "class",
 	plugins: [
