@@ -2,14 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/astro/landing/Navbar.astro';
 import LoginComponent from '../components/react/login/Login.jsx';
-import '../components/react/login/login.css';
 import Footer from '../components/astro/footer/Footer.astro';
+
+/*Importo los estilos en el componente para que se sepa que son de este componente*/
+import "../components/react/login/login.css"
 ---
 
 <Layout title="Login">
-    <Navbar />
+    <Navbar /> {/* Este componente debería ir dentro del layout*/}
     <div class=" mx-auto bg-gray-200 min-h-screen flex items-center justify-center">
-        <LoginComponent client:only />
+        <LoginComponent client:only/>
     </div>
-    <Footer />
+    <Footer /> {/* Este componente debería ir dentro del layout*/}
 </Layout>

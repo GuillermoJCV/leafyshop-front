@@ -209,9 +209,9 @@
 .form-container.sign-up {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-direction: column;
-    padding: 0 2.5rem;
+    /*padding: 0 2.5rem;*/ /*Estas dos propiedades estaban haciendo que se viera menos alargado*/
     height: 100%;
     transition: transform 0.3s ease;
 }

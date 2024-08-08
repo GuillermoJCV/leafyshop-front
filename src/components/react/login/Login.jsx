@@ -2,16 +2,16 @@ import { useRef, useEffect, useState } from "react";
 import {
     FaGooglePlus,
     FaFacebook,
-    FaTwitter,
+    FaTwitter,  
     FaLinkedin,
     FaGithub,
 } from "react-icons/fa";
-import "./login.css";
+
+
 
 export default function LoginComponent() {
     const containerRef = useRef(null);
     const formRef = useRef(null);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
     const [isSignUpActive, setIsSignUpActive] = useState(false);
 
     const submitHandler = (event) => {
@@ -26,16 +26,6 @@ export default function LoginComponent() {
                 form.removeEventListener("submit", submitHandler);
             };
         }
-
-        const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
     }, []);
 
     const handleRegisterClick = (event) => {
@@ -52,13 +42,10 @@ export default function LoginComponent() {
         containerRef.current.classList.add("show-sign-in");
     };
 
-    useEffect(() => {
-        containerRef.current.classList.add("show-sign-in");
-    }, []);
-
     return (
-        <main className="log-container" ref={containerRef}>
-            <section className={`form-container sign-in ${isSignUpActive ? "hide" : ""}`}>
+        <main   className="log-container show-sign-in" 
+                ref={containerRef}>
+            <section className="form-container sign-in">
                 <form ref={formRef}>
                     <h1>Iniciar Sesión</h1>
                     <div className="social-icons">
@@ -87,8 +74,9 @@ export default function LoginComponent() {
                     <button className="login-btn" type="submit">
                         Iniciar Sesión
                     </button>
-                    {isSmallScreen && !isSignUpActive && (
-                        <a className="a registrarse" href="#" onClick={handleRegisterClick}>
+                    {!isSignUpActive && (
+                        /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
+                        <a className="a registrarse hidden md:block" href="#" onClick={handleRegisterClick}>
                             Registrarse
                         </a>
                     )}
@@ -119,8 +107,9 @@ export default function LoginComponent() {
                     <input type="email" placeholder="Email" required />
                     <input type="password" placeholder="Password" required />
                     <button className="login-btn" type="submit">Registrarse</button>
-                    {isSmallScreen && isSignUpActive && (
-                        <a className="a iniciar-sesion" href="#" onClick={handleLoginClick}>
+                    {isSignUpActive && (
+                        /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
+                        <a className="a iniciar-sesion hidden md:block" href="#" onClick={handleLoginClick}>
                             Iniciar sesión
                         </a>
                     )}
