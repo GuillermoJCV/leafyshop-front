@@ -1,0 +1,35 @@
+---
+import { FaSquareFacebook, FaLinkedin, FaGithub } from "react-icons/fa6";
+---
+
+<footer class="bg-green-800 py-1 dark:bg-gray-900">
+    <div class="w-full max-w-screen-xl mx-auto p-2 md:py-8">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+            <a href="#" class="flex justify-center items-center space-x-3 rtl:space-x-reverse mx-4 mb-2 sm:mb-0 sm:justify-center sm:items-center">
+                <img src="/src/assets/logo2.png" class="h-8" alt="Logo" />
+                <span class="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white ml-2">Leafyshop</span>
+            </a>
+            <ul class="flex justify-center items-center mb-1 text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
+                <li class="me-4 md:me-6">
+                    <a href="https://www.facebook.com" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white flex items-center">
+                        <FaSquareFacebook className="w-6 h-6" />
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                </li>
+                <li class="me-4 md:me-6">
+                    <a href="https://www.linkedin.com" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white flex items-center">
+                        <FaLinkedin className="w-6 h-6" />
+                        <span class="sr-only">LinkedIn account</span>
+                    </a>
+                </li>
+                <li class="me-4 md:me-6 my-6">
+                    <a href="https://github.com" target="_blank" class="text-white hover:text-gray-900 dark:hover:text-white flex items-center">
+                        <FaGithub className="w-6 h-6" />
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <span class="block text-center text-sm text-white dark:text-gray-400">© 2023 All Rights Reserved.</span>
+    </div>
+</footer>
