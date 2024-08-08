@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/astro/landing/Navbar.astro';
 import LoginComponent from '../components/react/login/Login.jsx';
 import '../components/react/login/login.css';
+import Footer from '../components/astro/footer/Footer.astro';
 ---
 
 <Layout title="Login">
@@ -10,4 +11,5 @@ import '../components/react/login/login.css';
     <div class=" mx-auto bg-gray-200 min-h-screen flex items-center justify-center">
         <LoginComponent client:only />
     </div>
+    <Footer />
 </Layout>
