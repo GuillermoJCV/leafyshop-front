@@ -4,44 +4,24 @@ import { Card as NextUICard, CardBody, CardFooter, Image } from "@nextui-org/rea
 export default function ProductCard() {
     const list = [
         {
-            title: "Orange",
+            title: "Tecnología",
             img: "https://m.media-amazon.com/images/I/91Fb+Pcxe-L._AC_UF894,1000_QL80_.jpg",
             price: "$5.50",
         },
         {
-            title: "Tangerine",
+            title: "Para el hogar",
             img: "https://m.media-amazon.com/images/I/71aTEZOda0L._AC_UF894,1000_QL80_.jpg",
             price: "$3.00",
         },
         {
-            title: "Raspberry",
+            title: "Ropa",
             img: "https://www.cocinavital.mx/wp-content/uploads/2020/10/productos-hogar-y-cocina-mas-vendidos-en-amazon-dispensador-de-agua-600x600.jpg",
             price: "$10.00",
         },
         {
-            title: "Lemon",
+            title: "Alimentos",
             img: "https://m.media-amazon.com/images/I/91Fb+Pcxe-L._AC_UF894,1000_QL80_.jpg",
             price: "$5.30",
-        },
-        {
-            title: "Avocado",
-            img: "https://m.media-amazon.com/images/I/91Fb+Pcxe-L._AC_UF894,1000_QL80_.jpg",
-            price: "$15.70",
-        },
-        {
-            title: "Lemon 2",
-            img: "https://m.media-amazon.com/images/I/71aTEZOda0L._AC_UF894,1000_QL80_.jpg",
-            price: "$8.00",
-        },
-        {
-            title: "Banana",
-            img: "https://www.cocinavital.mx/wp-content/uploads/2020/10/productos-hogar-y-cocina-mas-vendidos-en-amazon-dispensador-de-agua-600x600.jpg",
-            price: "$7.50",
-        },
-        {
-            title: "Watermelon",
-            img: "https://m.media-amazon.com/images/I/91Fb+Pcxe-L._AC_UF894,1000_QL80_.jpg",
-            price: "$12.20",
         },
     ];
 
@@ -59,9 +39,8 @@ export default function ProductCard() {
                             src={item.img}
                         />
                     </CardBody>
-                    <CardFooter className="text-small justify-between">
+                    <CardFooter className="text-small justify-center">
                         <b>{item.title}</b>
-                        <p className="text-default-500">{item.price}</p>
                     </CardFooter>
                 </NextUICard>
             ))}
