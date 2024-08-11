@@ -43,7 +43,7 @@ export default function LoginComponent() {
     };
 
     return (
-        <main   className="log-container show-sign-in" 
+        <main   className="log-container show-sign-in flex flex-col gap-6 p-9 my-10" 
                 ref={containerRef}>
             <section className="form-container sign-in">
                 <form ref={formRef}>
@@ -65,8 +65,8 @@ export default function LoginComponent() {
                             <FaGithub />
                         </a>
                     </div>
-                    <span>Puede usar su correo electrónico</span>
-                    <input type="email" placeholder="Ingresar el correo" required />
+                    <span>Puede usar su usuario y contraseña</span>
+                    <input type="email" placeholder="Ingresar el usuario" required />
                     <input type="password" placeholder="Ingresar la contraseña" required />
                     <a className="a" href="#">
                         ¿Olvidaste tu contraseña?
@@ -76,9 +76,12 @@ export default function LoginComponent() {
                     </button>
                     {!isSignUpActive && (
                         /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
-                        <a className="a registrarse hidden md:block" href="#" onClick={handleRegisterClick}>
-                            Registrarse
-                        </a>
+                        <button
+                        className="registrarse hidden md:block text-blue-600"
+                        onClick={handleRegisterClick}
+                    >
+                        Registrarse
+                    </button>
                     )}
                 </form>
             </section>
@@ -103,15 +106,20 @@ export default function LoginComponent() {
                         </a>
                     </div>
                     <span>Puede usar su correo electrónico</span>
-                    <input type="text" placeholder="Name" required />
-                    <input type="email" placeholder="Email" required />
-                    <input type="password" placeholder="Password" required />
+                    <input type="text" placeholder="Ingresar nombre y apellido" required />
+                    <input type="text" placeholder="Ingresar usuario" required />
+                    <input type="email" placeholder="Ingresar email" required />
+                    <input type="password" placeholder="Ingresar la contraseña" required />
+                    <input type="confirm_password" placeholder="Confirmar contraseña" required />
                     <button className="login-btn" type="submit">Registrarse</button>
                     {isSignUpActive && (
                         /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
-                        <a className="a iniciar-sesion hidden md:block" href="#" onClick={handleLoginClick}>
-                            Iniciar sesión
-                        </a>
+                        <button
+                        className="iniciar-sesion hidden md:block text-blue-600" 
+                        href="#" onClick={handleLoginClick}
+                    >
+                        Iniciar sesión
+                    </button>
                     )}
                 </form>
             </section>
