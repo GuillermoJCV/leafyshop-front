@@ -1,5 +1,4 @@
-import React from "react";
-import { Input, Textarea, Checkbox, Select, SelectItem, Button } from "@nextui-org/react";
+import { Input, Textarea, Checkbox, Select, SelectItem, Button, Image } from "@nextui-org/react";
 import { times } from './data/data';
 import { MdPerson, MdOutlineMailOutline, MdPhone } from "react-icons/md";
 
@@ -10,9 +9,11 @@ export default function Contact() {
         <div className="flex flex-wrap items-start lg:justify-between">
 
           <div className="w-full md:w-6/12 lg:w-5/12 flex items-center justify-center lg:justify-end mb-4 md:mb-0 order-1 lg:order-2">
-            <img
+            <Image
+              width={300}
+              height={200}
               src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-              className="w-3/4 max-w-xs lg:max-w-lg"
+              className="w-3/4 max-w-xs lg:max-w-lg mx-14"
               alt="Phone image"
               style={{ marginTop: '2rem' }}
             />
