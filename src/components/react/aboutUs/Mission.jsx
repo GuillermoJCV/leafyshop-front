@@ -14,7 +14,7 @@ const MisionComponente = () => {
             <div className="relative w-full md:w-1/2 flex justify-center items-center mb-4 md:mb-0">
                 <figure className="w-64 h-64 bg-gray-300 rounded-lg flex items-center justify-center">
                     <img
-                        src="https://img.freepik.com/vector-gratis/retrato-joven-empleado-equipo_74855-7822.jpg"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/001/822/225/small/group-of-business-people-showing-teamwork-free-vector.jpg"
                         alt="Imagen representativa"
                         className="w-full h-auto object-contain rounded-2xl border-1 border-green-100"
                     />
