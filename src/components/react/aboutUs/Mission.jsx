@@ -9,7 +9,6 @@ const MisionComponente = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur fermentum tempor. Ut ultrices aliquet felis eget tincidunt. Nulla ultricies rhoncus leo et condimentum. Praesent in turpis felis. Aliquam et blandit metus, a imperdiet magna. Fusce erat leo, vehicula ac porta eu, euismod ut libero. Aliquam vel felis hendrerit, accumsan ipsum eget, semper turpis.
                 </p>
             </div>
-
             {/* Sección Derecha: Imagen cuadrada con nombre */}
             <div className="relative w-full md:w-1/2 flex justify-center items-center mb-4 md:mb-0">
                 <figure className="w-64 h-64 bg-gray-300 rounded-lg flex items-center justify-center">
