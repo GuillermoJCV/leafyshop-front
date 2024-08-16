@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/astro/navbar/Navbar.astro';
 import Banner from '../components/react/aboutUs/Banner.jsx';
 import Mission from '../components/react/aboutUs/Mission.jsx';
+import OurHistoryComponent from '../components/react/aboutUs/OurHIstory';
+import TimelineComponent from '../components/react/aboutUs/Timeline';
 import Footer from '../components/astro/footer/Footer.astro';
 ---
 
@@ -10,6 +12,7 @@ import Footer from '../components/astro/footer/Footer.astro';
     <Navbar /> 
     <Banner client:only="react" />
     <Mission client:only="react" />
-    
+    <OurHistoryComponent client:only="react" />
+    <TimelineComponent client:only="react" />
     <Footer />
 </Layout>

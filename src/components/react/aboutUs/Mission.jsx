@@ -12,17 +12,16 @@ const MisionComponente = () => {
 
             {/* Sección Derecha: Imagen cuadrada con nombre */}
             <div className="relative w-full md:w-1/2 flex justify-center items-center mb-4 md:mb-0">
-                <div className="w-64 h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+                <figure className="w-64 h-64 bg-gray-300 rounded-lg flex items-center justify-center">
                     <img
-                        src="https://static.vecteezy.com/system/resources/thumbnails/001/822/225/small/group-of-business-people-showing-teamwork-free-vector.jpg"
+                        src="https://img.freepik.com/vector-gratis/retrato-joven-empleado-equipo_74855-7822.jpg"
                         alt="Imagen representativa"
-                        className="w-48 h-48 object-cover rounded-lg border-1 border-green-100"
+                        className="w-full h-auto object-contain rounded-2xl border-1 border-green-100"
                     />
-                </div>
-                <div className="absolute bottom-10 bg-green-800 text-green-100 text-center rounded-lg transform translate-y-full -translate-x-1/3 px- py-2 px-2 sm:px-6 sm:py-3 text-xs sm:text-sm md:text-base">
-                    Nombres de los mismos
-                </div>
-
+                    <figcaption className="absolute bottom-2 border-2 bg-green-800 text-green-100 text-center font-bold rounded-full transform translate-y-full -translate-x-[10%] py-3 px-7 sm:px-9 sm:py-3 text-xs sm:text-sm md:text-base">
+                        Nombres de los mismos
+                    </figcaption>
+                </figure>
             </div>
         </div>
     );
