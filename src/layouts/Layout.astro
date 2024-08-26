@@ -24,7 +24,26 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
+<!--
+Voy a agregar los colores de tailwind al root de la página para que si quiere pueda ir cambiando las variables
+-->
+
 <style is:global>
+	:root {
+		--primary-50 	: #eefff4;
+		--primary-100 	: #d7ffe7;
+		--primary-200 	: #b2ffd0;
+		--primary-300 	: #76ffad;
+		--primary-400 	: #33f582;
+		--primary-500 	: #09de5f;
+		--primary-600 	: #01b84b;
+		--primary-700 	: #05903f;
+		--primary-800	: #0a7135;
+		--primary-900 	: #095028; /*Este es el color de --header-bg-color*/
+		--primary-950 	: #003417;
+	}
+
 	:root {
 		--bg-color: #f4f9f5;
 		--header-bg-color: #095028;
