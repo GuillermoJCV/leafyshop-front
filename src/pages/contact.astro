@@ -6,11 +6,9 @@ import Footer from '../components/astro/footer/Footer.astro';
 ---
 
 <Layout title="Contacto">
-    <Navbar />
     <div class="min-h-screen flex flex-col justify-between bg-gray-200">
         <div class="flex-grow flex items-center justify-center">
             <ContactForm client:only />
         </div>
-        <Footer />
     </div>
 </Layout>

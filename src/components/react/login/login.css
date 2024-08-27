@@ -50,11 +50,8 @@
     position: relative;
     width: clamp(100%, 20vw, 8.75rem);
     height: 2.813rem;
-    color: var(--st-secondary-color);
     font-size: clamp(0.8rem, 1.8vw, 0.938rem);
     outline: none;
-    border-radius: 0.5rem;
-    font-weight: bold;
     z-index: 1;
     overflow: hidden;
     letter-spacing: 0.5px;
@@ -71,14 +68,8 @@
     left: 0;
     width: 100%;
     height: 300%;
-    background: var(--header-bg-color);
     z-index: -1;
     transition: all 250ms;
-}
-
-.login-btn:hover::before {
-    top: 0;
-    filter: brightness(1.2);
 }
 
 .log-container form{
@@ -224,7 +215,7 @@
 
 .toggle{
     height: 100%;
-    background: var(--header-bg-color);
+    background: var(--main-900);
     color:var(--st-neutral-color);
     position: relative;
     left: -100%;
@@ -276,21 +267,9 @@
 }
 
 .toggle-btn{
-    color: var(--st-secondary-color);
-    font-weight: bold;
     margin: 1rem;
-    border: 2px solid var(--st-secondary-color);
 }
-.toggle-btn::before {
-    background-color: transparent;
-}
-.toggle-btn:hover,
-.toggle-btn:hover::before {
-    top: 0;
-    color: var(-st-secondary-color);
-    filter: brightness(1.35);
-    font-weight: bold;
-}
+
 .iniciar-sesion {
     display: none;
 }

@@ -15,7 +15,7 @@ export default {
 			* Luego llevé ese color a la página https://uicolors.app/create
 			* Y después agregué los colores con el nombre primary
 			*/
-			primary : {
+			main : {
 				50 	: "#eefff4",
 				100 : "#d7ffe7",
 				200 : "#b2ffd0",
@@ -27,11 +27,23 @@ export default {
 				800 : "#0a7135",
 				900 : "#095028",
 				950 : "#003417",
-			}
+			},
 			/*
 			* Para los grises vamos a usar el gray que ya existe en tailwind
 			* Ya que este no es gris puro, sino más bien un gris ligeramente más cyan
 			*/
+			main_dark : {
+				50 	: "#f8f9fa",
+				100 : "#f1f3f5",
+				200 : "#e9ecef",
+				300 : "#dee2e6",
+				400 : "#ced4da",
+				500 : "#adb5bd",
+				600 : "#868e96",
+				700 : "#495057",
+				800 : "#343a40",
+				900 : "#212529",
+			}
 		},
 	},
 	darkMode: "class",

@@ -9,10 +9,8 @@ import Footer from '../components/astro/footer/Footer.astro';
 ---
 
 <Layout title="Sobre nosotros">
-    <Navbar /> 
     <Banner client:only="react" />
     <Mission client:only="react" />
     <OurHistoryComponent client:only="react" />
     <TimelineComponent client:only="react" />
-    <Footer />
 </Layout>
