@@ -15,7 +15,7 @@ export default {
 			* Luego llevé ese color a la página https://uicolors.app/create
 			* Y después agregué los colores con el nombre primary
 			*/
-			primary : {
+			main : {
 				50 	: "#eefff4",
 				100 : "#d7ffe7",
 				200 : "#b2ffd0",
