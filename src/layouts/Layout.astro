@@ -35,17 +35,17 @@ Voy a agregar los colores de tailwind al root de la página para que si quiere p
 
 <style is:global>
 	:root {
-		--primary-50 	: #eefff4;
-		--primary-100 	: #d7ffe7;
-		--primary-200 	: #b2ffd0;
-		--primary-300 	: #76ffad;
-		--primary-400 	: #33f582;
-		--primary-500 	: #09de5f;
-		--primary-600 	: #01b84b;
-		--primary-700 	: #05903f;
-		--primary-800	: #0a7135;
-		--primary-900 	: #095028; /*Este es el color de --header-bg-color*/
-		--primary-950 	: #003417;
+		--main-50 	: #eefff4;
+		--main-100 	: #d7ffe7;
+		--main-200 	: #b2ffd0;
+		--main-300 	: #76ffad;
+		--main-400 	: #33f582;
+		--main-500 	: #09de5f;
+		--main-600 	: #01b84b;
+		--main-700 	: #05903f;
+		--main-800	: #0a7135;
+		--main-900 	: #095028; /*Este es el color de --header-bg-color*/
+		--main-950 	: #003417;
 
 		--secondary-50 	: #f8f9fa;
 	}
@@ -78,9 +78,29 @@ Voy a agregar los colores de tailwind al root de la página para que si quiere p
 		background-color: var(--secondary-50);
 		background-size: 224px;
 	}
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-}
+	}
+	.primary-btn {
+		background-color: var(--main-900);
+		color: var(--main-100);
+		border-radius: 999999px;
+		font-weight: bold;
+	}
+	.primary-btn:hover {
+		top: 0;
+    	filter: brightness(1.2);
+	}
+	.second-btn {
+		background-color: var(--main-100);
+		color: var(--main-900);
+		border-radius: 999999px;
+		font-weight: bold;
+	}
+	.second-btn:hover {
+		top: 0;
+    	filter: brightness(1.2);
+	}
 	code {
 		font-family:
 			Menlo,

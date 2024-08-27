@@ -71,13 +71,13 @@ export default function LoginComponent() {
                     <a className="a" href="#">
                         ¿Olvidaste tu contraseña?
                     </a>
-                    <button className="login-btn" type="submit">
+                    <button className="login-btn primary-btn" type="submit">
                         Iniciar Sesión
                     </button>
                     {!isSignUpActive && (
                         /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
                         <button
-                        className="registrarse hidden md:block text-blue-600"
+                        className="registrarse hidden md:block"
                         onClick={handleRegisterClick}
                     >
                         Registrarse
@@ -111,11 +111,11 @@ export default function LoginComponent() {
                     <input type="email" placeholder="Ingresar email" required />
                     <input type="password" placeholder="Ingresar la contraseña" required />
                     <input type="confirm_password" placeholder="Confirmar contraseña" required />
-                    <button className="login-btn" type="submit">Registrarse</button>
+                    <button className="login-btn primary-btn" type="submit">Registrarse</button>
                     {isSignUpActive && (
                         /* Siempre estará escondido hasta que el tamaño de la pantalla sea medio (mayor a 768)*/
                         <button
-                        className="iniciar-sesion hidden md:block text-blue-600" 
+                        className="iniciar-sesion hidden md:block" 
                         href="#" onClick={handleLoginClick}
                     >
                         Iniciar sesión
@@ -131,7 +131,7 @@ export default function LoginComponent() {
                             Ingrese sus datos personales para utilizar todas las funciones del
                             sitio
                         </p>
-                        <button className="login-btn toggle-btn" onClick={handleLoginClick}>
+                        <button className="login-btn toggle-btn main-btn second-btn" onClick={handleLoginClick}>
                             Iniciar Sesión
                         </button>
                     </article>
@@ -141,7 +141,7 @@ export default function LoginComponent() {
                             Registre sus datos personales para utilizar todas las funciones
                             del sitio
                         </p>
-                        <button className="login-btn toggle-btn" onClick={handleRegisterClick}>
+                        <button className="login-btn toggle-btn main-btn second-btn" onClick={handleRegisterClick}>
                             Registrarse
                         </button>
                     </article>
