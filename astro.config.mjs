@@ -8,5 +8,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [react(), tailwind()],
   output: "hybrid",
-  adapter: cloudflare()
+  adapter: cloudflare({
+    imageService : "cloudflare"
+  })
 });
