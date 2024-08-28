@@ -32,6 +32,21 @@ npm run dev
 O por el contrario:
 npm start
 ```
+## Instalaciones
+* React-icons
+
+        npm install react-icons --save
+
+* Cloudflare
+
+    1. ejecutar comando:
+
+            npx astro add cloudflare
+
+    2. En cada pregunta escribir `y`
+    3. En archivo `astro.config.mjs` cambiar **output: "server"** por
+
+             output: "hybrid"
 
 ## Tecnologías
 * HTML, CSS, JavaScript
