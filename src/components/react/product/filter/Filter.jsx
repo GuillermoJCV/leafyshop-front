@@ -6,13 +6,13 @@ import CheckboxComponent from "./CheckboxComponent";
 export default function Filter() {
 
     return (
-        <main>
+        <main className="w-full max-w-md mx-auto">
             <h2 className="font-bold  text-main_dark-700 pb-3">Categorías</h2>
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-4 w-full">
                 <SearchCategory />
                 <SliderComponent />
                 <CheckboxComponent />
-                <div className="flex flex-wrap justify-center gap-4 items-center  pt-3">
+                <div className="flex flex-wrap justify-center gap-4 items-center pt-3">
                 <Button className="text-main-900 font-bold" color="success">
                     Aplicar filtros
                 </Button>

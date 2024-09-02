@@ -17,6 +17,7 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "astro": "4.12.3",
+    "classnames": "^2.5.1",
     "framer-motion": "^11.3.19",
     "leafyshop-front": "file:",
     "react": "18.3.1",

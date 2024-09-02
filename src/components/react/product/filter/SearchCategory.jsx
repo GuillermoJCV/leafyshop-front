@@ -1,12 +1,12 @@
 import {Select, SelectItem} from "@nextui-org/react";
-import {categorys} from "./data/data.js";
+import {categorys} from "../data/data.js";
 
 export default function SechCategory() {
   return (
-    <div className="flex w-full flex-col md:flex-nowrap gap-4 pb-4 pt-4">
+    <div className="w-full flex flex-col gap-4 pb-4 pt-4">
       <Select 
         label="Buscar Categoría" 
-        className="max-w-xs pb-4" 
+        className="w-full" 
       >
         {categorys.map((category) => (
           <SelectItem key={category.key}>
@@ -16,7 +16,7 @@ export default function SechCategory() {
       </Select>
       <Select 
         label="Buscar Sub Categoría" 
-        className="max-w-xs" 
+        className="w-full" 
       >
         {categorys.map((category) => (
           <SelectItem key={category.key}>

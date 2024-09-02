@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Filter from '../components/react/product/Filter.jsx';
+import Filter from '../components/react/product/filter/Filter.jsx';
 ---
 
 <Layout title="Inicio">
-	<aside class="w-full md:w-1/3 p-5 bg-gray-50 bg-white m-4">
+	<div class="flex flex-col md:flex-row">
+		<aside class="w-full md:w-1/3 p-5 bg-gray-50 bg-white m-4">
 		<Filter client:only />
-	</aside>
-</Layout>
+		</aside>
 
+		<main class="w-full md:w-2/3 p-5 bg-gray-50 bg-white m-4">
+		</main>
+	</div>
+</Layout>
