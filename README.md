@@ -39,7 +39,7 @@ npm start
 
 * Cloudflare
 
-    1. ejecutar comando:
+    1. Ejecutar comando:
 
             npx astro add cloudflare
 
@@ -47,6 +47,10 @@ npm start
     3. En archivo `astro.config.mjs` cambiar **output: "server"** por
 
              output: "hybrid"
+
+* cn de classnames
+
+        npm install classnames
 
 ## Tecnologías
 * HTML, CSS, JavaScript
