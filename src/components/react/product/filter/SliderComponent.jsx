@@ -59,7 +59,7 @@ export default function SliderComponent() {
                     className="max-w-md"
                     classNames={{
                         base: "max-w-md gap-3",
-                        filler: "bg-gradient-to-r from-main-900 to-main_dark-300 dark:from-main-600 dark:to-main_dark-800",
+                        filler: "bg-gradient-to-r from-main-500 to-main_dark-300 dark:from-main-600 dark:to-main_dark-800",
                     }}
                     renderThumb={({ index, ...props }) => (
                         <div
@@ -70,8 +70,8 @@ export default function SliderComponent() {
                                 className={cn(
                                     "transition-transform bg-gradient-to-br shadow-small rounded-full w-5 h-5 block group-data-[dragging=true]:scale-80",
                                     index === 0
-                                        ? "from-main-200 to-main-500 dark:from-main-400 dark:to-main-600" // Primer thumb
-                                        : "from-main_dark-200 to-main_dark-600 dark:from-main_dark-600 dark:to-main_dark-800", // Segundo thumb
+                                        ? "from-main-200 to-main-500 dark:from-main-400 dark:to-main-600" 
+                                        : "from-main_dark-200 to-main_dark-600 dark:from-main_dark-600 dark:to-main_dark-800", 
                                 )}
                             />
                         </div>
