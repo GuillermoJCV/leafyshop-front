@@ -31,20 +31,12 @@ const userData = signup(data) // O también Auth.signup(data)
 */
 
 export default class Authorization {
-	constructor()
-	{	
-		/* TODO : Cambiar este error a uno más descriptivo */
-		if(!this.#API_URL) throw new TypeError("La URL de la api no está siendo reconocida");
-
-		this.#RESOURCE = `${this.#API_URL}/users/auth`;
-	}
-
 	/* Cambiar el error del fetch a uno más descriptivo*/
-	async login(username, password) {
+	static async login(username, password) {
 		if(typeof username !== "string") throw new TypeError("username debe ser una cadena de texto")
 		if(typeof password !== "string") throw new TypeError("password debe ser una cadena de texto")
 
-		const fetched = await fetch(`${this.#RESOURCE}/${username}/${password}`)
+		const fetched = await fetch(`${Authorization.#RESOURCE}/${username}/${password}`)
 		.then(data => {
 			if(data.ok) return data.json()
 			else throw new Error("Ha ocurrido un error al iniciar sesión")
@@ -53,10 +45,10 @@ export default class Authorization {
 		return fetched
 	}
 
-	async signup(data) {
+	static async signup(data) {
 		const parsedData = UserRequestSignUpSchema.parse(data)
 
-		const fetched = await fetch(`${this.#RESOURCE}/`, {
+		const fetched = await fetch(`${Authorization.#RESOURCE}/`, {
 			method : "POST",
 			headers : {
 				"Content-Type" : "application/json"
@@ -71,6 +63,6 @@ export default class Authorization {
 		return fetched
 	}
 
-	#RESOURCE;
-	#API_URL = import.meta.env.PUBLIC_API_URL;
+	static #RESOURCE = `${Authorization.#API_URL}/users/auth`;
+	static #API_URL = import.meta.env.PUBLIC_API_URL;
 }
