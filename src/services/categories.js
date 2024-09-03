@@ -1,3 +1,28 @@
+/*
+USO DE LA CLASE CATEGORIES :
+
+//Importación: 
+---
+import { findById, findMany, ... } from ".../categories.js"
+
+// O también
+
+import Categories from ".../categories.js"
+---
+
+//Para usar el findById 	:
+
+const id = 1 // O cualquier número
+const category = findById(id) //O también Categories.findById(id)
+
+//Para usar findMany 		:
+
+const params = {
+	page : 1 //O cualquier otra página
+}
+const category = findMany(params) // O también Categories.findMany(params)
+*/
+
 export default class Categories {
 
 /*
